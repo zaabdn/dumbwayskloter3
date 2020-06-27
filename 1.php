@@ -5,7 +5,7 @@
 		$totalB = $jumlah*5330;
 		$totalC = $jumlah*8653;
 
-		if ($barang=='A' && $jumlah < 13) {
+		if ($barang=='A' && $jumlah <= 13) {
 			echo "Total harga barang : " .$totalA. "<br>";
 			echo "Potongan : 0 <br>";
 			echo "Total yang harus dibayar : " .$totalA;
@@ -15,7 +15,7 @@
 			echo "Total harga barang : " .$totalA. "<br>";
 			echo "Potongan : " .$potonganA. "<br>";
 			echo "Total yang harus dibayar : " .$bayarA;
-		}elseif ($barang=='B' && $jumlah < 7) {
+		}elseif ($barang=='B' && $jumlah <= 7) {
 			echo "Total harga barang : " .totalB. "<br>";
 			echo "Potongan : 0 <br>";
 			echo "Total yang harus dibayar : " .$totalB;
